@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ink-950 text-mist-100 font-body;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+::selection {
+  background: #F5B700;
+  color: #0B0D17;
+}
+
+:focus-visible {
+  outline: 2px solid #F5B700;
+  outline-offset: 2px;
+}
+
+.card {
+  @apply bg-ink-800 border border-ink-700 rounded-2xl;
+}
+
+.btn-primary {
+  @apply bg-gold-500 text-ink-950 font-semibold px-4 py-2 rounded-xl hover:bg-gold-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply bg-ink-700 text-mist-100 font-semibold px-4 py-2 rounded-xl hover:bg-ink-700/70 border border-ink-700 transition-colors;
+}
+
+.input {
+  @apply bg-ink-900 border border-ink-700 rounded-xl px-3 py-2 text-mist-100 placeholder:text-mist-500 focus:border-gold-500 outline-none w-full;
+}
